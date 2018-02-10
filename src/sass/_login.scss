@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+} 
+.container-fluid {
+    height: 100%;
+
+    .row {
+        height: 100%;
+
+        .login-splash {
+            background-image: url('https://source.unsplash.com/collection/430077/1600x900');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+        }
+
+        .login-input-group {
+            height: 100%;
+            position: relative;
+
+            .form-wrapper {
+                position: relative;
+                height: 100%;
+                position: relative;
+
+                form {
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}
