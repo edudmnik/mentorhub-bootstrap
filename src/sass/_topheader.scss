@@ -1,0 +1,49 @@
+.top-header {
+    position: relative;
+
+    .logo {
+        height: 62px;
+        width: 62px;
+        background-image: url('../images/mentorhub-logo-compressed.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 15px;
+        position: relative;
+    }
+
+    .user-control {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 14px;
+        // letter-spacing: -0.6px;
+        padding: 10px 0;
+
+        .username {
+            float: left;
+            color: #8F8C97;
+            line-height: 40px;
+            padding-right: 10px;
+
+            span {
+                color: #B9B6C2;
+            }
+
+            i {
+                font-size: 16px;
+            }
+        }
+
+        .avatar {
+            border: 2px solid #F8F8F8;
+            background-image: url('../images/avatar.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            float: left;
+        }
+    }
+}

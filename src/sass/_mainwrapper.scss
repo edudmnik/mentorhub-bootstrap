@@ -1,0 +1,46 @@
+.top-header {
+    width: 100%;
+    background: #FFFFFF;
+    border-bottom: 1px solid #F8F8F8;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #F8F8F8;
+    z-index: -1;
+}
+.left-sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 80px;
+    background: #FFF;
+    
+    background: #FFFFFF;
+    border-right: 1px solid #F8F8F8;
+    box-shadow: 0px 2px 6px 0 rgba(214,219,226,0.63);
+}
+
+.main-content {
+	padding-right: 400px;
+    padding-left: 80px; 
+}
+
+.right-sidebar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 400px;
+    background: #788fed;
+
+    background: #FFFFFF;
+    box-shadow: -2px 2px 6px 0 rgba(214,219,226,0.63);
+}
