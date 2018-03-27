@@ -1,0 +1,28 @@
+.breadcrumb {
+    list-style: none;
+    border: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #8F8C97;
+    letter-spacing: -1.01px;
+
+
+    li {
+        float: left;
+
+        ::after {
+            font-family: $material;
+            content: "chevron_right";
+            padding-top: 15px;
+        }
+
+        a, a:link, a:active, a:visited {
+            color: #8F8C97;
+            text-decoration: none;
+        }
+    }
+
+    .active {
+        color: #F15B5D;
+    }
+}

@@ -1,0 +1,40 @@
+.right-sidebar {
+    padding-top: 98px;
+
+    .top-info {
+        text-align: center;
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            background: #c6c6c6;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    
+        .contact-name {
+            font-size: 16px;
+            color: #4F4F53;
+            letter-spacing: -0.8px;
+        }
+    
+        .position {
+            font-size: 14px;
+            color: #50B481;
+            letter-spacing: -0.7px;
+        }
+
+        i {
+            padding-right: 5px;
+            font-size: 20px;
+            color: #50B481;
+        }
+
+        .mentor {
+            font-size: 14px;
+            color: #B9B6C2;
+            letter-spacing: -0.7px;
+        }
+    }
+}
