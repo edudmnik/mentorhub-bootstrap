@@ -1,5 +1,6 @@
 .right-sidebar {
     padding-top: 98px;
+    overflow: auto;
 
     .top-info {
         text-align: center;
@@ -16,13 +17,11 @@
         .contact-name {
             font-size: 16px;
             color: #4F4F53;
-            letter-spacing: -0.8px;
         }
     
         .position {
             font-size: 14px;
             color: #50B481;
-            letter-spacing: -0.7px;
         }
 
         i {
@@ -35,6 +34,48 @@
             font-size: 14px;
             color: #B9B6C2;
             letter-spacing: -0.7px;
+        }
+    }
+
+    .section {
+
+        h3 {
+            font-size: 16px;
+            color: #4F4F53;
+        }
+
+        .info-section {
+            padding: 15px;
+            background: #F8F8F8;
+    
+            .information {
+                font-size: 14px;
+                color: #B9B6C2;
+                line-height: 24px;
+    
+                .company-logo {
+                    display: inline-block;
+                    height: 17px;
+                    width: 17px;
+                    background: #D8D8D8;
+                    border-radius: 1px;
+                }
+            }
+        }
+
+        .tag-section {
+            padding: 15px;
+
+            .tag {
+                border: 1px solid #50B481;
+                border-radius: 100px;
+                color: #50B481;
+                letter-spacing: -0.7px;
+                text-align: center;
+                float: left;
+                padding: 5px 10px;
+                margin: 5px 0 0 5px;
+            }
         }
     }
 }

@@ -11,9 +11,11 @@
         float: left;
 
         ::after {
-            font-family: $material;
-            content: "chevron_right";
-            padding-top: 15px;
+            // font-family: $material;
+            // content: "chevron_right";
+            // padding-top: 15px;
+            font-family: "fontawesome";
+            content: "f054";
         }
 
         a, a:link, a:active, a:visited {
