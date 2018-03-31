@@ -25,6 +25,19 @@
         transform: translateY(-50%);
     }
 
+    .controls {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+
+        i {
+            float: left;
+            font-size: 16px;
+            color: #B9B6C2;
+            padding-right: 12px;
+        }
+    }
+
     .info-wrapper {
         padding-left: 67px;
         font-size: 16px;

@@ -4,18 +4,21 @@
     padding: 0;
     font-size: 18px;
     color: #8F8C97;
-    letter-spacing: -1.01px;
 
 
     li {
         float: left;
+        line-height: 75px;
 
         ::after {
             // font-family: $material;
             // content: "chevron_right";
             // padding-top: 15px;
-            font-family: "fontawesome";
-            content: "f054";
+            content: "\f054";
+            font-family: FontAwesome;
+            font-size: 13px;
+            padding: 5px;
+            color: #D8D8D8;
         }
 
         a, a:link, a:active, a:visited {
