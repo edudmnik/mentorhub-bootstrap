@@ -1,0 +1,87 @@
+.form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #50B481;
+    background-color: transparent;
+    background-image: none;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    margin-bottom: 15px;
+    input {
+        font-family: FontAwesome !important;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        color: #50B481 !important;
+        font-size: 30px;
+    }
+}
+
+.tokenfield {
+
+    .token-input {
+        color: #50B481 !important;
+        background: none;
+        width: 60px;
+        min-width: 60px;
+        border: 0;
+        height: 26px;
+        padding: 0;
+        margin-bottom: 6px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .token {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        // border-radius: 100px;
+        display: inline-block;
+        // border: 1px solid #d9d9d9;
+        background-color: transparent;
+        white-space: nowrap;
+        margin: -1px 5px 5px 0;
+        height: auto;
+        vertical-align: top;
+        cursor: default;
+    
+        border: 1px solid #50B481;
+        border-radius: 100px;
+        color: #50B481;
+        // letter-spacing: -0.7px;
+        text-align: center;
+        // float: left;
+        padding: 2px 5px;
+        // margin: 5px 0 0 5px;
+    
+        .token-label {
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-left: 5px;
+            vertical-align: top;
+        }
+    
+        .close {
+            display: inline-block;
+            line-height: 100%;
+            font-size: 1.1em;
+            line-height: 1.49em;
+            margin-left: 5px;
+            float: none;
+            height: 100%;
+            vertical-align: top;
+            padding-right: 5px;
+            color: #50B481;
+        }
+    }
+}

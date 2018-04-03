@@ -9,6 +9,8 @@
 
     <!-- Bootstrap -->
     <link href="./css/bootstrap-min.css" rel="stylesheet">
+    <link href="./css/bootstrap-tokenfield-min.css" rel="stylesheet">
+    <link href="./css/tokenfield-typehead-min.css" rel="stylesheet">
     <link href="./css/style-min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -29,7 +31,19 @@
       <div class="user-control">
         <div class="username"><span>Hello,</span> John Doe <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
         <div class="avatar"></div>
+        <div class="user-dropdown">
+          <ul>
+            <li><a href="">User profile</a></li>
+            <li><a href="">Logout</a></li>
+          </ul>
+        </div>
       </div>
+      <!-- <div class="user-dropdown">
+        <ul>
+          <li><a href="">User profile</a></li>
+          <li><a href="">Logout</a></li>
+        </ul>
+      </div> -->
     </div>
     <!-- End Top Header -->
 
@@ -37,29 +51,39 @@
     <div class="left-sidebar">
       <ul class="menu">
         <li class="menu-item active">
-            <aside class="marker"></aside>
-            <i class="material-icons">people_outline</i>
-            <span>People</span>
+            <a href="#">
+              <aside class="marker"></aside>
+              <i class="material-icons">people_outline</i>
+              <span>People</span>
+            </a>
         </li>
         <li class="menu-item">
-            <aside class="marker"></aside>
-            <i class="material-icons">bookmark_border</i>
-            <span>Bookmarks</span>
+            <a href="#">
+              <aside class="marker"></aside>
+              <i class="material-icons">bookmark_border</i>
+              <span>Bookmarks</span>
+            </a>
         </li>
         <li class="menu-item">
-            <aside class="marker"></aside>
-            <i class="material-icons">format_list_bulleted</i>
-            <span>List</span>
+            <a href="#">
+              <aside class="marker"></aside>
+              <i class="material-icons">format_list_bulleted</i>
+              <span>List</span>
+            </a>
         </li>
         <li class="menu-item">
-            <aside class="marker"></aside>
-            <i class="material-icons">mail_outline</i>
-            <span>Requests</span>
+            <a href="#">
+              <aside class="marker"></aside>
+              <i class="material-icons">mail_outline</i>
+              <span>Requests</span>
+            </a>
         </li>
         <li class="menu-item">
-            <aside class="marker"></aside>
-            <i class="material-icons">share</i>
-            <span>Relationships</span>
+            <a href="#">
+              <aside class="marker"></aside>
+              <i class="material-icons">share</i>
+              <span>Relationships</span>
+            </a>
         </li>
       </ul>
     </div>
@@ -68,12 +92,21 @@
     <!-- Main Content Areas -->
     <div class="main-content">
       <div class="container-fluid">
+        <!-- breadcrumbs -->
         <div class="row">
           <div class="col-sm-12">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
                 <li class="breadcrumb-item active">Library</li>
               </ol>
+          </div>
+        </div>
+        <!-- end breadcrumbs -->
+
+        <!-- autocomplete tags -->
+        <div class="row">
+          <div class="col-sm-12">
+              <input type="text" class="form-control" id="tokenfield" value="red,green,blue" placeholder="&#xf055;" />
           </div>
         </div>
 
@@ -86,11 +119,11 @@
                 <i class="material-icons">format_list_bulleted</i>
                 <i class="material-icons">bookmark_border</i>
               </div>
-              <div class="avatar"></div>
+              <div class="avatar" style="background-image:url('http://lorempixel.com/50/50/people/')"></div>
               <div class="info-wrapper">
                   <div class="contact-name">John Doe <span>Position</span></div>
                   <div class="company-information">
-                    <i></i> Company Name
+                    <i style="background-image:url('http://lorempixel.com/20/20/abstract/')"></i> Company Name
                   </div>
                   <div class="additional-information">
                       Lorem ipsum dolor sit amet, consectetur…
@@ -110,11 +143,11 @@
                 <i class="material-icons">format_list_bulleted</i>
                 <i class="material-icons">bookmark_border</i>
               </div>
-              <div class="avatar"></div>
+              <div class="avatar" style="background-image:url('http://lorempixel.com/50/50/people/')"></div>
               <div class="info-wrapper">
                   <div class="contact-name">John Doe <span>Position</span></div>
                   <div class="company-information">
-                    <i></i> Company Name
+                    <i style="background-image:url('http://lorempixel.com/20/20/abstract/')"></i> Company Name
                   </div>
                   <div class="additional-information">
                       Lorem ipsum dolor sit amet, consectetur…
@@ -134,11 +167,11 @@
                 <i class="material-icons">format_list_bulleted</i>
                 <i class="material-icons">bookmark_border</i>
               </div>
-              <div class="avatar"></div>
+              <div class="avatar" style="background-image:url('http://lorempixel.com/50/50/people/')"></div>
               <div class="info-wrapper">
                   <div class="contact-name">John Doe <span>Position</span></div>
                   <div class="company-information">
-                    <i></i> Company Name
+                    <i style="background-image:url('http://lorempixel.com/20/20/abstract/')"></i> Company Name
                   </div>
                   <div class="additional-information">
                       Lorem ipsum dolor sit amet, consectetur…
@@ -158,11 +191,11 @@
                 <i class="material-icons">format_list_bulleted</i>
                 <i class="material-icons">bookmark_border</i>
               </div>
-              <div class="avatar"></div>
+              <div class="avatar" style="background-image:url('http://lorempixel.com/50/50/people/')"></div>
               <div class="info-wrapper">
                   <div class="contact-name">John Doe <span>Position</span></div>
                   <div class="company-information">
-                    <i></i> Company Name
+                    <i style="background-image:url('http://lorempixel.com/20/20/abstract/')"></i> Company Name
                   </div>
                   <div class="additional-information">
                       Lorem ipsum dolor sit amet, consectetur…
@@ -182,11 +215,11 @@
                 <i class="material-icons">format_list_bulleted</i>
                 <i class="material-icons">bookmark_border</i>
               </div>
-              <div class="avatar"></div>
+              <div class="avatar" style="background-image:url('http://lorempixel.com/50/50/people/')"></div>
               <div class="info-wrapper">
                   <div class="contact-name">John Doe <span>Position</span></div>
                   <div class="company-information">
-                    <i></i> Company Name
+                    <i style="background-image:url('http://lorempixel.com/20/20/abstract/')"></i> Company Name
                   </div>
                   <div class="additional-information">
                       Lorem ipsum dolor sit amet, consectetur…
@@ -206,11 +239,11 @@
                 <i class="material-icons">format_list_bulleted</i>
                 <i class="material-icons">bookmark_border</i>
               </div>
-              <div class="avatar"></div>
+              <div class="avatar" style="background-image:url('http://lorempixel.com/50/50/people/')"></div>
               <div class="info-wrapper">
                   <div class="contact-name">John Doe <span>Position</span></div>
                   <div class="company-information">
-                    <i></i> Company Name
+                    <i style="background-image:url('http://lorempixel.com/20/20/abstract/')"></i> Company Name
                   </div>
                   <div class="additional-information">
                       Lorem ipsum dolor sit amet, consectetur…
@@ -230,11 +263,11 @@
                 <i class="material-icons">format_list_bulleted</i>
                 <i class="material-icons">bookmark_border</i>
               </div>
-              <div class="avatar"></div>
+              <div class="avatar" style="background-image:url('http://lorempixel.com/50/50/people/')"></div>
               <div class="info-wrapper">
                   <div class="contact-name">John Doe <span>Position</span></div>
                   <div class="company-information">
-                    <i></i> Company Name
+                    <i style="background-image:url('http://lorempixel.com/20/20/abstract/')"></i> Company Name
                   </div>
                   <div class="additional-information">
                       Lorem ipsum dolor sit amet, consectetur…
@@ -256,7 +289,7 @@
         <div class="row">
           <div class="col-sm-12">
               <div class="top-info">
-                  <div class="avatar"></div>
+                  <div class="avatar" style="background-image:url('http://lorempixel.com/50/50/people/')"></div>
                   <div class="contact-name">John Doe</div>
                   <div class="position">Position</div>
                   <div class="mentor"><i class="fa fa-check-circle-o" aria-hidden="true"></i>Have mentored a sturtup before</div>
@@ -268,7 +301,7 @@
               <div class="info-section">
                   <h3>Contact information</h3>
                   <div class="information">
-                    <i class="company-logo"></i> Company Name
+                    <i class="company-logo" style="background-image:url('http://lorempixel.com/20/20/abstract/')"></i> Company Name
                   </div>
                   <div class="information">
                       <i class="fa fa-envelope" aria-hidden="true"></i> johndoe@email.com
@@ -314,5 +347,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap-min.js"></script>
+    <script src="js/bootstrap-tokenfield-min.js"></script>
+    <script>
+      $('#tokenfield').tokenfield({
+        autocomplete: {
+          source: ['red','blue','green','yellow','violet','brown','purple','black','white'],
+          delay: 100
+        },
+        showAutocompleteOnFocus: true
+      });
+    </script>
   </body>
 </html>

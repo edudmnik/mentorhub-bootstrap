@@ -12,6 +12,9 @@
         height: 46px;
         border-radius: 23px;
         background-color: #9c9c9c;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         float: left;
     }
 
@@ -35,6 +38,9 @@
             font-size: 16px;
             color: #B9B6C2;
             padding-right: 12px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
     }
 
