@@ -327,6 +327,15 @@ h1 {
   margin: 5px 0 5px 0;
   line-height: 24px; }
 
+.form-button {
+  background: #645FAA;
+  border-radius: 100px;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  padding: 10px 35px;
+  text-transform: uppercase; }
+
 .form-control {
   z-index: 100;
   display: block;

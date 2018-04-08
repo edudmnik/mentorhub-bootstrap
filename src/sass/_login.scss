@@ -1,37 +1,107 @@
-html, body {
+ html, body {
     height: 100%;
-} 
-.container-fluid {
+}
+// .container-fluid {
+//     height: 100%;
+
+//     .logo {
+//         background-image: url('../images/logo.svg');
+//         background-repeat: no-repeat;
+//         background-size: contain;
+//         height: 62px;
+//         width: 140px;
+//         position: absolute;
+//         top: 15px;
+//         left: 15px;
+//     }
+
+//     .row {
+//         height: 100%;
+
+//         .login-splash {
+//             background: 
+//                 /* gradient overlay */ 
+//                 linear-gradient(
+//                 rgba(241, 91, 91, 0.45), 
+//                 rgba(100, 95, 170, 0.95)
+//                 ),
+//                 url('https://source.unsplash.com/collection/430077/1600x900');
+//             background-size: cover;
+//             background-position: center;
+//             background-repeat: no-repeat;
+//             height: 100%;
+//         }
+
+//         .login-input-group {
+//             height: 100%;
+//             position: relative;
+
+//             .form-wrapper {
+//                 position: relative;
+//                 height: 100%;
+
+//                 form {
+//                     width: 75%;
+//                     position: absolute;
+//                     top: 50%;
+//                     left: 50%;
+//                     transform: translate(-50%, -50%);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.left-side {
     height: 100%;
+    // padding-right: 50%;
+    position: relative;
+    overflow: auto;
+    width: 50%;
 
-    .row {
-        height: 100%;
-
-        .login-splash {
-            background-image: url('https://source.unsplash.com/collection/430077/1600x900');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100%;
-        }
-
-        .login-input-group {
-            height: 100%;
-            position: relative;
-
-            .form-wrapper {
-                position: relative;
-                height: 100%;
-                position: relative;
-
-                form {
-                    width: 100%;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
-        }
+    .logo {
+        background-image: url('../images/logo.svg');
+        background-color: #FFF;
+        background-repeat: no-repeat;
+        background-size: 140px;
+        background-position: 25px;
+        height: 95px;
+        width: 100%;
+        padding-left: 25px;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
+
+    .form-wrapper {
+        width: 75%;
+        padding-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.right-side {
+    width: 50%;
+    position: fixed;
+	top: 0;
+	right: 0;
+    bottom: 0;
+    background: 
+        /* gradient overlay */ 
+        linear-gradient(
+        rgba(241, 91, 91, 0.45), 
+        rgba(100, 95, 170, 0.95)
+        ),
+        url('https://source.unsplash.com/collection/430077/1600x900');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
