@@ -1,0 +1,15 @@
+.nav-pills > li > a {
+    border-radius: 0;
+    color: #C1BFCA;
+}
+.nav-pills > li > a:hover {
+    background-color: transparent;
+    color: #54B382;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #54B382;
+    /* background-color: #337ab7; */
+    border-bottom: #54B382 1px solid;
+    border-radius: 0;
+    background-color: transparent;
+}

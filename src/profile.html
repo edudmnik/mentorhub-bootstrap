@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Starter Studio - Metor Hub Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap-min.css" rel="stylesheet">
+    <!-- <link href="./css/bootstrap-tokenfield-min.css" rel="stylesheet"> -->
+    <!-- <link href="./css/tokenfield-typehead-min.css" rel="stylesheet"> -->
+    <link href="./css/style-min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="background"></div>
+
+    <!-- Top Header -->
+    <div class="top-header">
+      <div class="logo"></div>
+      <!-- <div class="search-bar"><i class="material-icons">search</i><input type="text"></div> -->
+      <div class="user-control">
+        <div class="username"><span>Hello,</span> John Doe <i class="fa fa-chevron-down" aria-hidden="true"></i></div>
+        <div class="avatar"></div>
+        <div class="user-dropdown">
+          <ul>
+            <li><a href="">User profile</a></li>
+            <li><a href="">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Top Header -->
+
+    <!-- Left sidebar -->
+    <div class="left-sidebar">
+      <ul class="menu">
+        <li class="menu-item">
+            <a href="#">
+              <aside class="marker"></aside>
+              <i class="material-icons">people_outline</i>
+              <span>People</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#">
+              <aside class="marker"></aside>
+              <i class="material-icons">bookmark_border</i>
+              <span>Bookmarks</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#">
+              <aside class="marker"></aside>
+              <i class="material-icons">format_list_bulleted</i>
+              <span>List</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#">
+              <aside class="marker"></aside>
+              <i class="material-icons">mail_outline</i>
+              <span>Requests</span>
+            </a>
+        </li>
+        <li class="menu-item">
+            <a href="#">
+              <aside class="marker"></aside>
+              <i class="material-icons">share</i>
+              <span>Relationships</span>
+            </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Left sidebar -->
+    
+    <!-- Main Content Areas -->
+    <div class="main-content profile">
+      <div class="container-fluid">
+        <!-- breadcrumbs -->
+        <div class="row">
+          <div class="col-sm-12">
+              <ol class="breadcrumb">
+                <!-- <li class="breadcrumb-item"><a href="#">People</a></li> -->
+                <li class="breadcrumb-item active">Profile</li>
+              </ol>
+          </div>
+        </div>
+        <!-- end breadcrumbs -->
+
+        <div class="profile-panel">
+            <div class="container-fluid">
+                <ul class="nav nav-pills pull-right">
+                    <li class="active"><a data-toggle="tab" href="#tab1">Personal</a></li>
+                    <li><a data-toggle="tab" href="#tab2">Company</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane fade in active">
+                        <form class="linear-form" action="">
+                            <div class="avatar-container">
+                                <div class="avatar-upload">
+                                    <div class="avatar-edit">
+                                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                        <label for="imageUpload"></label>
+                                    </div>
+                                    <div class="avatar-preview">
+                                        <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="inputName">Name</label>
+                                        <input type="text" class="form-control" id="inputName" placeholder="First Name" required="true" value="John">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="inputLastName">Last Name</label>
+                                        <input type="text" class="form-control" id="inputLastName" placeholder="Last Name" required="true" value="Doe">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="inputPhone">Phone</label>
+                                        <input type="text" class="input-medium bfh-phone form-control" id="inputPhone" data-format="+1 (ddd) ddd-dddd" value="4072222222">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="inputUsername">Username</label>
+                                        <input type="text" class="form-control" id="inputUsername" placeholder="Username" required="true" value="johndoeuser" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="inputPassword3">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required="true" value="password">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group pull-right">
+                                        <button type="submit" class="form-button">Save Changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="tab2" class="tab-pane fade">
+                        <h3>Startup Information</h3>
+                        <p>This tab is for startup information.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- End Main Content Areas -->
+    
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap-min.js"></script>
+    <script src="js/bootstrap-formhelpers-phone-min.js"></script>
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function() {
+            readURL(this);
+        });
+    </script>
+  </body>
+</html>

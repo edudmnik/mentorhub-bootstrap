@@ -1,0 +1,15 @@
+.profile {
+    padding-right: 0;
+    max-width: 1015px;
+    display: block;
+    // position: relative;
+
+    .profile-panel {
+        position: relative;
+        background: #FFFFFF;
+        box-shadow: 0 2px 6px 0 rgba(214,219,226,0.63);
+        border-radius: 4px;
+        width: 100%;
+        padding: 15px;
+    }
+}
