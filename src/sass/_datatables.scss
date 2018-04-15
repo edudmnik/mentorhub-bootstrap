@@ -1,0 +1,173 @@
+.admin {
+    padding-right: 0;
+    max-width: 100%;
+    display: block;
+    // position: relative;
+
+    .admin-panel {
+        position: relative;
+        background: #FFFFFF;
+        box-shadow: 0 2px 6px 0 rgba(214,219,226,0.63);
+        border-radius: 4px;
+        width: 100%;
+        padding: 15px;
+
+        .table > thead > tr > th, 
+        .table > thead > tr > td, 
+        .table > tbody > tr > th,  
+        .table > tfoot > tr > th, 
+        .table > tfoot > tr > td {
+            padding: 24px 8px 24px 21px;
+            line-height: 1.428571429;
+            vertical-align: top;
+            border-top: 0;
+        }
+
+        .table > tbody > tr > td {
+            padding: 24px 8px;
+            line-height: 1.428571429;
+            vertical-align: top;
+            border-top: 0;
+        }
+
+        .table > thead > tr > th.no-sorting {
+            padding-left: 8px;
+        }
+    }
+}
+
+.data-table-style {
+    padding-top: 70px;
+
+    table.dataTable thead .sorting_asc:after {
+        // content: "\e155";
+        content: "\f077" !important;
+    }
+    table.dataTable thead .sorting_desc:after {
+        // content: "\e156";
+        content: "\f078" !important;
+    }
+    table.dataTable thead .sorting:after {
+        opacity: 0.2;
+        // content: "\e150";
+        content:"\f078" !important;
+    }
+    table.dataTable tbody tr.selected {
+        background-color: #B0BED9 !important;
+    }
+    table.dataTable thead .sorting:after, 
+    table.dataTable thead .sorting_asc:after, 
+    table.dataTable thead .sorting_desc:after, 
+    table.dataTable thead .sorting_asc_disabled:after, 
+    table.dataTable thead .sorting_desc_disabled:after {
+        position: absolute;
+        bottom: 24px !important;
+        // right: 1px;
+        left: 1px;
+        display: block;
+        font-family: 'FontAwesome' !important;
+        opacity: 0.5;
+    }
+    .pagination > .active > a, 
+    .pagination > .active > a:hover, 
+    .pagination > .active > a:focus, 
+    .pagination > .active > span, 
+    .pagination > .active > span:hover, 
+    .pagination > .active > span:focus {
+        z-index: 3;
+        color: #fff;
+        background-color: #4FBFE0 !important;
+        border-color: #4FBFE0 !important;
+        cursor: default;
+    }
+
+    div.dataTables_wrapper div.dataTables_filter input {
+        margin-left: 0.5em;
+        display: inline-block;
+        width: auto;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        border: 1px rgb(235, 235, 235) solid;
+        font-size: 14px;
+        background: #F9F9F9;
+        // box-shadow: 0 2px 6px 0 rgba(214, 219, 226, 0.63);
+        padding: 5px 10px 5px 10px;
+    }
+    div.dataTables_wrapper div.dataTables_length select {
+        width: 75px;
+        display: inline-block;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        border: 1px rgb(235, 235, 235) solid;
+        font-size: 14px;
+        background: #F9F9F9;
+        // box-shadow: 0 2px 6px 0 rgba(214, 219, 226, 0.63);
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+.admin-panel {
+    .tab-content {
+        .form-control {
+            z-index: 100;
+            display: block;
+            width: auto;
+            height: 41px;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.428571429;
+            color: #50B481;
+            background: #F9F9F9;
+            background-image: none;
+            border: 1px rgb(235, 235, 235) solid;
+            border-radius: 50px !important;
+            -webkit-border-radius: 50px !important;
+            -moz-border-radius: 50px !important;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            -webkit-transition: none;
+            -o-transition: none;
+            transition: none;
+            margin-bottom: 0;
+            padding: 5px 10px 5px 10px;
+        }
+        select {
+            height: 41px !important;
+            border-radius: 50px !important;
+            -webkit-border-radius: 50px !important;
+            -moz-border-radius: 50px !important;
+            // background-image: url('../images/chevron-down.svg') !important;
+            // background-repeat: no-repeat !important;
+            // background-position: right 13px !important;
+            // background-size:  15px !important;
+        }
+        select:after {
+            content: "a";
+        }
+
+        table {
+            tbody {
+                tr {
+                    td {
+                        position: relative;
+
+                        i {
+                            position: absolute;
+                            padding: 10px;
+                            top: 15px;
+                        }
+                        .approve {
+                            color: #50B481;
+                        }
+                        .deny {
+                            color: #E05557;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
